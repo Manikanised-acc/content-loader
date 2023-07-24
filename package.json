@@ -1,7 +1,7 @@
 {
-  "name": "content-loader",
+  "name": "content-loader-react-test",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -79,5 +79,26 @@
   },
   "peerDependencies": {
     "react": "^18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Manikanised-acc/content-loader"
+  },
+  "keywords": [],
+  "author": "Manik",
+  "bugs": {
+    "url": "https://github.com/Manikanised-acc/content-loader/issues"
+  },
+  "homepage": "https://github.com/Manikanised-acc/content-loader#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "yarn  eslint",
+      "yarn  format"
+    ]
   }
 }
