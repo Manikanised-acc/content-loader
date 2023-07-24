@@ -1,8 +1,6 @@
 name: Generate Tag
 on:
-  push:
-    branches:
-      - main  # Replace 'main' with your primary branch name if different.
+  workflow_dispatch:  # This will enable manual runs only
 
 jobs:
   build:
